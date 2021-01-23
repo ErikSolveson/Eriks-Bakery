@@ -1,0 +1,103 @@
+:root {
+  font-size: 16px;
+}
+
+body {
+  background-color: rgba(255, 255, 255, 0.707);
+  color: #3d405c;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  margin-left: 5rem;
+  padding: 1rem;
+}
+
+a {
+  color: rgba(255, 255, 255, 0.707);
+}
+
+.navbar {
+  width: 5rem;
+  height: 100vh;
+  position: fixed;
+  background-color: #6f2dbd;
+  -webkit-transition: width 0.2s ease;
+  transition: width 0.2s ease;
+}
+
+.navbar:hover {
+  width: 12rem;
+}
+
+.navbar:hover .link-text {
+  display: block;
+}
+
+.navbar:hover .link-text .open-button {
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+.navbar-bar {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.nav-item,
+.open-button {
+  width: 100%;
+}
+
+.nav-item :last-child,
+.open-button :last-child {
+  margin-top: auto;
+}
+
+.nav-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 5rem;
+  -webkit-columns: rgba(255, 255, 255, 0.707);
+  columns: rgba(255, 255, 255, 0.707);
+  text-decoration: none;
+}
+
+.nav-link:hover .link-text {
+  color: green;
+}
+
+.link-text {
+  display: none;
+}
+
+.nav-link svg {
+  width: 3.5rem;
+  margin: 0 1.5rem;
+  color: rgba(255, 255, 255, 0.707);
+}
+
+.nav-link svg:hover {
+  color: green;
+}
+
+.open-button {
+  background-color: #521d8f;
+}
+/*# sourceMappingURL=style.css.map */
